@@ -6,6 +6,11 @@ To use this application, you will require a web server. You can then access the 
 
 [This guide](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server#Running_a_simple_local_HTTP_server) demonstrates how you can install a local web server on your machine and run a HTML file on the server.
 
+## Cookie Usage
+The application utilizes cookies and the local storage of the browser. The reasons for this are explained in detail in the cookie policy modal reachable via the cookie consent bar of the application. The cookiepolicy.md file in the root of this repository also contains a copy of the text.
+
+However, if your website utilizes cookies from third-party services, it is your responsibility to provide a separate or extended cookie consent solution. I, Jayden Muzzin, Lachlan Spears and the associates of this application and repository are by no means liable for the consequences pertaining to not providing an adeqaute cookie consent solution.
+
 ## Using the application
 To use the application:
   1. Ensure the active branch of this repository is 'master'
