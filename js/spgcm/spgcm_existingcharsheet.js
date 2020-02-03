@@ -22,16 +22,20 @@ class ExistingCharacterSheet extends React.Component {
         }
     }
 
-    storeCharSheet = () => {    
-        let charSheet = {
-            stats: this.props.charStats,
-            skillPoints: this.state.skillPoints,
-            rep: this.state.rep,
-            inv: this.state.inv,
-            skillsnmods: this.state.skillsnmods
-        };
+    storeCharSheet = () => {
+        let cookieConsent = getCookie("cookieconsent_status");
 
-        localStorage.setItem('charSheet', JSON.stringify(charSheet));
+        if (cookieConsent == "allow") {
+            let charSheet = {
+                stats: this.props.charStats,
+                skillPoints: this.state.skillPoints,
+                rep: this.state.rep,
+                inv: this.state.inv,
+                skillsnmods: this.state.skillsnmods
+            };
+
+            localStorage.setItem('charSheet', JSON.stringify(charSheet));
+        }
     }
 
     componentDidMount() {

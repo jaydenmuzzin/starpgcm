@@ -89,16 +89,20 @@ function StarPGCharacterManager () {
                 mults: []
             };
 
-            let charSheet = JSON.parse(localStorage.getItem('charSheet'));
+            let cookieConsent = getCookie("cookieconsent_status");
 
-            if (charSheet) {
-                hasCharSheet = true;
-                showExChar = true;
-                stats = charSheet.stats,
-                skillPoints = charSheet.skillPoints,
-                rep = charSheet.rep,
-                inv = charSheet.inv,
-                skillsnmods = charSheet.skillsnmods
+            if (cookieConsent == "allow") {
+                let charSheet = JSON.parse(localStorage.getItem('charSheet'));
+
+                if (charSheet) {
+                    hasCharSheet = true;
+                    showExChar = true;
+                    stats = charSheet.stats,
+                    skillPoints = charSheet.skillPoints,
+                    rep = charSheet.rep,
+                    inv = charSheet.inv,
+                    skillsnmods = charSheet.skillsnmods
+                }
             }
 
             this.state = {
@@ -198,6 +202,13 @@ function StarPGCharacterManager () {
             });
         }
 
+        ccLearnMoreHeading = "Cookie Policy";
+        ccLearnMoreContent = "This application utilises cookies and the local storage of the browser to enhance the experience of the user.\n\nIn the event of the user allowing or denying the use of cookies, the application stores a cookie to indicate this allowance or denial. This allowed or denied consent informs the application whether it is allowed to use cookies and the local storage of the browser.\n\nIf allowed, the application stores the current data of the active character sheet being used in the local storage of the browser. This is done out of convenience for the user to prevent loss of new character sheet data should they reload or close the browser without having saved the character sheet to a file. It also affords the user the convenience of continuing with their character sheet when they next load the application without them having to load a saved character sheet file.\n\nIf the user denies the use of cookies, cookies (except the consent cookie) and the local storage of the browser are not used. The user can revoke their cookie consent at any time by clicking the tab at the top-left of the screen.";
+
+        renderCCPopup = () => {
+            return <Popup id="ccLearnMore" heading={this.ccLearnMoreHeading} content={this.ccLearnMoreContent} buttons="Okay" />;
+        }
+
         renderErrPopup = () => {
             if (this.state.errorMessage) {
                 let buttons = [
@@ -247,6 +258,7 @@ function StarPGCharacterManager () {
             return (
                 <div className="justify-content-center">
                     <div className="spgcm">
+                        {this.renderCCPopup()}
                         {this.renderErrPopup()}
 
                         <h1 className="align-center">StarPG Character Manager</h1>
@@ -271,9 +283,11 @@ function StarPGCharacterManager () {
 }
 
 if (document.readyState !== 'loading') {
+    cookieConsent();
     StarPGCharacterManager();
 } else {
     document.addEventListener('DOMContentLoaded', () => {
+        cookieConsent();
         StarPGCharacterManager();
     });
 }
