@@ -238,7 +238,7 @@ function StarPGCharacterManager () {
         }
 
         componentDidMount() {
-            fetch("/js/spgcm/gameData.json")
+            fetch("js/spgcm/gameData.json")
             .then(response => response.json())
             .then(data => {
                 this.gameData = data;
