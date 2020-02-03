@@ -1,0 +1,902 @@
+{
+    "races": {
+        "human": {
+            "id": 1,
+            "name": "Human",
+            "physicals": {
+                "height": {
+                    "minHeight": "4'2\"",
+                    "maxHeight": "6'4\""
+                },
+                "weight": {
+                    "minWeight": "60kg",
+                    "maxWeight": "90kg"
+                }
+            },
+            "description": "Proven to be one of the most adaptable species in the universe, humans have an incredible skill to create something from nothing.\n\nHumans are a very well-rounded species, and they are the main pioneers of the frontier colonies.",
+            "attributes": {
+                "strength": 6,
+                "agility": 6,
+                "intelligence": 6
+            }
+        },
+        "syrin": {
+            "id": 2,
+            "name": "Syrin",
+            "physicals": {
+                "height": {
+                    "minHeight": "5'5\"",
+                    "maxHeight": "6'8\""
+                },
+                "weight": {
+                    "minWeight": "65kg",
+                    "maxWeight": "95kg"
+                }
+            },
+            "description": "The Syrin are a reptilian species that has grown sentient from millions of years of uninterrupted evolution.\nThey have a reputation for being the most hardy and skilled soldiers in the universe.",
+            "attributes": {
+                "strength": 9,
+                "agility": 5,
+                "intelligence": 4
+            }
+        },
+        "zephre": {
+            "id": 3,
+            "name": "Zephre",
+            "physicals": {
+                "height": {
+                    "minHeight": "5'1\"",
+                    "maxHeight": "6'1\""
+                },
+                "weight": {
+                    "minWeight": "50kg",
+                    "maxWeight": "70kg"
+                }
+            },
+            "description": "The Zephre are a race of hyper-intelligent insects, often considered the ‘bottom feeders’ of the frontier life.\nHumility is not a feature of Zephre culture, and they are happy to survive however they can. Many are quick to dismiss their quiet, yet superior intelligence.",
+            "attributes": {
+                "strength": 4,
+                "agility": 6,
+                "intelligence": 8
+            }
+        },
+        "basod": {
+            "id": 4,
+            "name": "Basod",
+            "physicals": {
+                "height": {
+                    "minHeight": "5'4\"",
+                    "maxHeight": "5'11\""
+                },
+                "weight": {
+                    "minWeight": "58kg",
+                    "maxWeight": "82kg"
+                }
+            },
+            "description": "The Basod are reminiscent of Earth-bound dogs, with snouts and large noses for smelling.\nThey have an amazing versatility within combat and an athleticism to match. They are surprised and shocked to hear the treatment of dogs on Earth, and think less of human because of it.",
+            "attributes": {
+                "strength": 6,
+                "agility": 8,
+                "intelligence": 4
+            }
+        },
+        "felights": {
+            "id": 5,
+            "name": "Felights",
+            "physicals": {
+                "height": {
+                    "minHeight": "5'2\"",
+                    "maxHeight": "5'8\""
+                },
+                "weight": {
+                    "minWeight": "50kg",
+                    "maxWeight": "75kg"
+                }
+            },
+            "description": "Felights are a high-born breed of cat-like creatures. Regarding themselves above all other races, Felights will never submit to any race that threatens their way of life.\nThey are incredibly sharp hunters, and have an amazing sense of awareness with their surroundings.",
+            "attributes": {
+                "strength": 2,
+                "agility": 9,
+                "intelligence": 7
+            }
+        },
+        "aquarines": {
+            "id": 6,
+            "name": "Aquarines",
+            "physicals": {
+                "height": {
+                    "minHeight": "5'4\"",
+                    "maxHeight": "6'8\""
+                },
+                "weight": {
+                    "minWeight": "80kg",
+                    "maxWeight": "110kg"
+                }
+            },
+            "description": "Aquarines are a race very closely resembling humans, with the addition of a shark-like face.\nThey have adapted to survive by filtering oxygen through their gills, and can survive without air for quite some time due to a very strong set of physical attributes.",
+            "attributes": {
+                "strength": 8,
+                "agility": 4,
+                "intelligence": 6
+            }
+        }
+    },
+    "professions": {
+        "pilot": {
+            "id": 1,
+            "title": "Pilot",
+            "bonuses": {
+                "strength": 0,
+                "agility": 1,
+                "intelligence": 1
+            },
+            "skillBonus": 0
+        },
+        "medic": {
+            "id": 2,
+            "title": "Medic",
+            "bonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 2
+            },
+            "skillBonus": 0
+        },
+        "soldier": {
+            "id": 3,
+            "title": "Soldier",
+            "bonuses": {
+                "strength": 2,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "skillBonus": 0
+        },
+        "mechanic": {
+            "id": 4,
+            "title": "Mechanic",
+            "bonuses": {
+                "strength": 0,
+                "agility": 2,
+                "intelligence": 0
+            },
+            "skillBonus": 0
+        },
+        "diplomat": {
+            "id": 5,
+            "title": "Diplomat",
+            "bonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 2
+            },
+            "skillBonus": 0
+        },
+        "outlaw": {
+            "id": 6,
+            "title": "Outlaw",
+            "bonuses": {
+                "strength": 1,
+                "agility": 1,
+                "intelligence": 0
+            },
+            "skillBonus": 0
+        },
+        "artisan": {
+            "id": 7,
+            "title": "Artisan",
+            "bonuses": {
+                "strength": 0,
+                "agility": 1,
+                "intelligence": 1
+            },
+            "skillBonus": 0
+        },
+        "electrician": {
+            "id": 8,
+            "title": "Electrician",
+            "bonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 2
+            },
+            "skillBonus": 0
+        },
+        "metallurgist": {
+            "id": 9,
+            "title": "Metallurgist",
+            "bonuses": {
+                "strength": 2,
+                "agility": 0,
+                "intelligence": 0
+            },
+            "skillBonus": 0
+        },
+        "engineer": {
+            "id": 10,
+            "title": "Engineer",
+            "bonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 2
+            },
+            "skillBonus": 0
+        },
+        "scout": {
+            "id": 11,
+            "title": "Scout",
+            "bonuses": {
+                "strength": 0,
+                "agility": 2,
+                "intelligence": 0
+            },
+            "skillBonus": 0
+        },
+        "gunner": {
+            "id": 12,
+            "title": "Gunner",
+            "bonuses": {
+                "strength": 1,
+                "agility": 0,
+                "intelligence": 1
+            },
+            "skillBonus": 0
+        },
+        "scavenger": {
+            "id": 13,
+            "title": "Scavenger",
+            "bonuses": {
+                "strength": 1,
+                "agility": 1,
+                "intelligence": 0
+            },
+            "skillBonus": 0
+        },
+        "inventor": {
+            "id": 14,
+            "title": "Inventor",
+            "bonuses": {
+                "strength": 0,
+                "agility": 0,
+                "intelligence": 2
+            },
+            "skillBonus": 0
+        },
+        "officer": {
+            "id": 15,
+            "title": "Officer",
+            "bonuses": {
+                "strength": 1,
+                "agility": 0,
+                "intelligence": 1
+            },
+            "skillBonus": 0
+        },
+        "merchant": {
+            "id": 16,
+            "title": "Merchant",
+            "bonuses": {
+                "strength": 1,
+                "agility": 0,
+                "intelligence": 1
+            },
+            "skillBonus": 0
+        },
+        "botanist": {
+            "id": 17,
+            "title": "Botanist",
+            "bonuses": {
+                "strength": 0,
+                "agility": 1,
+                "intelligence": 1
+            },
+            "skillBonus": 0
+        },
+        "architect": {
+            "id": 18,
+            "title": "Architect",
+            "bonuses": {
+                "strength": 1,
+                "agility": 1,
+                "intelligence": 0
+            },
+            "skillBonus": 0
+        }
+    },
+    "upbringings": {
+        "farmer": {
+            "id": 1,
+            "title": "Farmer",
+            "description": "You’ve always been a fan of the simpler life. From an early age, you were offering a helping hand around the family farm. You have developed a thickened skin, and aren’t afraid of getting a bit of dirt and grit on your hands.",
+            "skillBonus": 0
+        },
+        "straightastudent": {
+            "id": 2,
+            "title": "Straight-A Student",
+            "description": "You’ve never let your parents down, not once. You always aim to impress, and when you weren’t getting attention, you were trying to earn it. Never content with things the way they are, you’re always striving towards the next accolade.",
+            "skillBonus": 0
+        },
+        "athlete": {
+            "id": 3,
+            "title": "Athlete",
+            "description": "You’ve got only one speed: GO. You’ve never really thought about it, just always aimed for the next PB, the next fast KM, and the lowest time possible. Your athleticism makes you feel invincible, and you're always ready for a good brawl.",
+            "skillBonus": 0
+        },
+        "slave": {
+            "id": 4,
+            "title": "Slave",
+            "description": "The lowest of the low, your family sold you off for a quick fix, and you’ve been traded from place to place, moving on when you had fulfilled your task. You learned the language of slavers, knowing the tricks of trading, and being adept at listening when you know you shouldn’t.",
+            "skillBonus": 0
+        },
+        "tinkerer": {
+            "id": 5,
+            "title": "Tinkerer",
+            "description": "Rather than playing with your toys, you always chose to dismantle them, frustrating your family to no end. Whenever you felt down, you would always try to invent or fix something to keep your mind off your issues.",
+            "skillBonus": 0
+        },
+        "freedomfighter": {
+            "id": 6,
+            "title": "Freedom Fighter",
+            "description": "You have never been happy with the way things are, but never quite sure what the solution should be. If there’s one thing you do know, it’s how to stick it to the man and fight for what you really believe in.",
+            "skillBonus": 0
+        },
+        "prankster": {
+            "id": 7,
+            "title": "Prankster",
+            "description": "You were always the sneaky youngster, constantly playing tricks and pranks on your friends. You always got away with it because you never returned to the scene of the crime, and you knew how to stay hidden in the shadows.",
+            "skillBonus": 0
+        },
+        "orphan": {
+            "id": 8,
+            "title": "Orphan",
+            "description": "Your parents were killed during a failed shuttle launch, and you were left to fend for yourself. Rather than seek out any help, you adapted to life on the street, learning how to survive in the harshest of environments.",
+            "skillBonus": 0
+        },
+        "warchild": {
+            "id": 9,
+            "title": "War Child",
+            "description": "Raised by a military family, your life has revolved around precision and execution of orders, even in your own home. As a result, you have a deeper understanding of military procedure, and a hardy stomach to the horrors of warfare.",
+            "skillBonus": 0
+        },
+        "highborn": {
+            "id": 10,
+            "title": "Highborn",
+            "description": "Born to an incredibly rich family, you were always given the best of the best. Your family owned their own luxury escape, and you were given the opportunity to learn skills such as shooting high-tech weaponry from the finest teachers money could buy.",
+            "skillBonus": 0
+        },
+        "spacer": {
+            "id": 11,
+            "title": "Spacer",
+            "description": "You’ve never known what Earth feels like, having been born on one of the engineering satellites orbiting earth. You floated between stations to find work, and always took up any job which paid well. You are more in touch with the mechanics of spaceflight, and know when something of value passes your eye.",
+            "skillBonus": 0
+        },
+        "outcast": {
+            "id": 12,
+            "title": "Outcast",
+            "description": "You were always the stranger in the bunch. Always the one picked last for team sports, you were the quiet achiever in your groups, often surprising people when it was your turn. You know how to fight, and you know how to patch yourself back up afterwards.",
+            "skillBonus": 0
+        }
+    },
+    "personalities": {
+        "healer": {
+            "id": 1,
+            "title": "Healer",
+            "bonuses": {
+                "strength": 1,
+                "agility": 2,
+                "intelligence": 4
+            }
+        },
+        "provider": {
+            "id": 2,
+            "title": "Provider",
+            "bonuses": {
+                "strength": 2,
+                "agility": 2,
+                "intelligence": 3
+            }
+        },
+        "performer": {
+            "id": 3,
+            "title": "Performer",
+            "bonuses": {
+                "strength": 2,
+                "agility": 3,
+                "intelligence": 2
+            }
+        },
+        "protector": {
+            "id": 4,
+            "title": "Protector",
+            "bonuses": {
+                "strength": 4,
+                "agility": 2,
+                "intelligence": 1
+            }
+        },
+        "composer": {
+            "id": 5,
+            "title": "Composer",
+            "bonuses": {
+                "strength": 3,
+                "agility": 2,
+                "intelligence": 2
+            }
+        },
+        "supervisor": {
+            "id": 6,
+            "title": "Supervisor",
+            "bonuses": {
+                "strength": 3,
+                "agility": 1,
+                "intelligence": 3
+            }
+        },
+        "dynamo": {
+            "id": 7,
+            "title": "Dynamo",
+            "bonuses": {
+                "strength": 3,
+                "agility": 3,
+                "intelligence": 1
+            }
+        },
+        "inspector": {
+            "id": 8,
+            "title": "Inspector",
+            "bonuses": {
+                "strength": 2,
+                "agility": 2,
+                "intelligence": 3
+            }
+        },
+        "craftsman": {
+            "id": 9,
+            "title": "Craftsman",
+            "bonuses": {
+                "strength": 2,
+                "agility": 4,
+                "intelligence": 1
+            }
+        },
+        "mastermind": {
+            "id": 10,
+            "title": "Mastermind",
+            "bonuses": {
+                "strength": 1,
+                "agility": 1,
+                "intelligence": 5
+            }
+        },
+        "counsellor": {
+            "id": 11,
+            "title": "Counsellor",
+            "bonuses": {
+                "strength": 1,
+                "agility": 4,
+                "intelligence": 2
+            }
+        },
+        "commander": {
+            "id": 12,
+            "title": "Commander",
+            "bonuses": {
+                "strength": 1,
+                "agility": 2,
+                "intelligence": 4
+            }
+        },
+        "visionary": {
+            "id": 13,
+            "title": "Visionary",
+            "bonuses": {
+                "strength": 3,
+                "agility": 3,
+                "intelligence": 1
+            }
+        },
+        "teacher": {
+            "id": 14,
+            "title": "Teacher",
+            "bonuses": {
+                "strength": 2,
+                "agility": 2,
+                "intelligence": 3
+            }
+        },
+        "architect": {
+            "id": 15,
+            "title": "Architect",
+            "bonuses": {
+                "strength": 1,
+                "agility": 5,
+                "intelligence": 1
+            }
+        },
+        "champion": {
+            "id": 16,
+            "title": "Champion",
+            "bonuses": {
+                "strength": 5,
+                "agility": 1,
+                "intelligence": 1
+            }
+        }
+    },
+    "reputation": {
+        "limits": {
+            "minRep": "-10",
+            "maxRep": "10"
+        },
+        "factions": {
+            "guardian": {
+                "id": 1,
+                "name": "Guardian"
+            },
+            "zirindustries": {
+                "id": 2,
+                "name": "Zir Industries"
+            },
+            "peacekeepers": {
+                "id": 3,
+                "name": "Peacekeepers"
+            },
+            "surface": {
+                "id": 4,
+                "name": "Surface"
+            },
+            "landercorp": {
+                "id": 5,
+                "name": "Lander Corp."
+            },
+            "pioneerx": {
+                "id": 6,
+                "name": "Pioneer X"
+            },
+            "banking": {
+                "id": 7,
+                "name": "Banking"
+            },
+            "herald": {
+                "id": 8,
+                "name": "Herald"
+            },
+            "terranostra": {
+                "id": 9,
+                "name": "Terra Nostra"
+            }
+        }
+    },
+    "skills": {
+        "rage": {
+            "id": 1,
+            "name": "rage",
+            "displayName": "Rage",
+            "image": "",
+            "description": "Attack a random target with your fists. Last 3 turns.\n - 50% increased Damage\n - 50% chance to hit ally",
+            "mods": {
+                "boons": {
+                    "cooldown": {
+                        "id": 1,
+                        "name": "Cool Down",
+                        "image": "",
+                        "description": "Reduces your chance to hit an ally by 5% per Skill Point",
+                        "maxMultipliers": 6
+                    },
+                    "madness": {
+                        "id": 2,
+                        "name": "Madness",
+                        "image": "",
+                        "description": "Increases bonus damage by 5% per Skill Point",
+                        "maxMultipliers": 6
+                    }
+                },
+                "upgrades": {
+                    "enhancedrage": {
+                        "id": 1,
+                        "name": "Enhanced Rage",
+                        "image": "",
+                        "description": "Rage can now be used as a ranged attack",
+                        "maxMultipliers": 4
+                    },
+                    "focusedrage": {
+                        "id": 2,
+                        "name": "Focused Rage",
+                        "image": "",
+                        "description": "Rage only lasts 2 turns",
+                        "maxMultipliers": 3
+                    },
+                    "rageboonthree": {
+                        "id": 3,
+                        "name": "Rage Boon #3",
+                        "image": "",
+                        "description": "Rage does double damage against elite targets",
+                        "maxMultipliers": 4
+                    },
+                    "rageboonfour": {
+                        "id": 4,
+                        "name": "Rage Boon #4",
+                        "image": "",
+                        "description": "Rage now uses two weapons in a dual wield",
+                        "maxMultipliers": 7
+                    }
+                }
+            }
+        },
+        "marksmanship": {
+            "id": 2,
+            "name": "marksmanship",
+            "displayName": "Marksmanship",
+            "image": "",
+            "description": "Once per encounter you may elect to fire a sidearm during a minor action",
+            "mods": {
+                "boons": {
+                    "scout": {
+                        "id": 1,
+                        "name": "Scout",
+                        "image": "",
+                        "description": "Gain a 5% bonus to physical damage per Skill Point",
+                        "maxMultipliers": 6
+                    },
+                    "specialist": {
+                        "id": 2,
+                        "name": "Specialist",
+                        "image": "",
+                        "description": "Gain a 5% bonus to elemental damage per Skill Point",
+                        "maxMultipliers": 6
+                    }
+                },
+                "upgrades": {
+                    "tactician": {
+                        "id": 1,
+                        "name": "Tactician",
+                        "image": "",
+                        "description": "Marksmanship may be used twice during an encounter",
+                        "maxMultipliers": 3
+                    },
+                    "rifleman": {
+                        "id": 2,
+                        "name": "Rifleman",
+                        "image": "",
+                        "description": "You may use any class of rifle during Marksmanship",
+                        "maxMultipliers": 3
+                    },
+                    "veteran": {
+                        "id": 3,
+                        "name": "Veteran",
+                        "image": "",
+                        "description": "Marksmanship attacks ignore shields and armor",
+                        "maxMultipliers": 4
+                    },
+                    "realmarksman": {
+                        "id": 4,
+                        "name": "Real Marksman",
+                        "image": "",
+                        "description": "You may use any two weapons during Marksmanship",
+                        "maxMultipliers": 8
+                    }
+                }
+            }
+        },
+        "bootsdown": {
+            "id": 3,
+            "name": "bootsdown",
+            "displayName": "Boots Down",
+            "image": "",
+            "description": "At the start of an encounter you may move half of your movement ability without consuming an action",
+            "mods": {
+                "boons": {
+                    "trainers": {
+                        "id": 1,
+                        "name": "Trainers",
+                        "image": "",
+                        "description": "You may move 5% more per Skill Point during Boots Down",
+                        "maxMultipliers": 8
+                    },
+                    "skates": {
+                        "id": 2,
+                        "name": "Skates",
+                        "image": "",
+                        "description": "Gain additional encounter uses of Boots Down",
+                        "maxMultipliers": 2
+                    }
+                },
+                "upgrades": {
+                    "sneakers": {
+                        "id": 1,
+                        "name": "Sneakers",
+                        "image": "",
+                        "description": "You may use Boots Down at any point during an encounter",
+                        "maxMultipliers": 4
+                    },
+                    "slippers": {
+                        "id": 2,
+                        "name": "Slippers",
+                        "image": "",
+                        "description": "Boots Down will not cause any noise or distraction",
+                        "maxMultipliers": 4
+                    },
+                    "hikers": {
+                        "id": 3,
+                        "name": "Hikers",
+                        "image": "",
+                        "description": "You may traverse difficult terrain during Boots Down",
+                        "maxMultipliers": 3
+                    },
+                    "drmarties": {
+                        "id": 4,
+                        "name": "Dr. Marties",
+                        "image": "",
+                        "description": "You gain a free major action after using Boots Down",
+                        "maxMultipliers": 9
+                    }
+                }
+            }
+        },
+        "patchwork": {
+            "id": 4,
+            "name": "patchwork",
+            "displayName": "Patchwork",
+            "image": "",
+            "description": "Heal a target for 1x D20 for every 30 STR they have",
+            "mods": {
+                "boons": {
+                    "vigor": {
+                        "id": 1,
+                        "name": "Vigor",
+                        "image": "",
+                        "description": "Patchwork targets gain 5% bonus damage to next hit per Skill Point",
+                        "maxMultipliers": 5
+                    },
+                    "stamina": {
+                        "id": 2,
+                        "name": "Stamina",
+                        "image": "",
+                        "description": "Patchwork targets gain 5% less damage from next hit per Skill Point",
+                        "maxMultipliers": 5
+                    },
+                    "speedboost": {
+                        "id": 3,
+                        "name": "Speed Boost",
+                        "image": "",
+                        "description": "Patchwork targets gain 5% Initiative to next turn",
+                        "maxMultipliers": 4
+                    }
+                },
+                "upgrades": {
+                    "guidance": {
+                        "id": 1,
+                        "name": "Guidance",
+                        "image": "",
+                        "description": "Patchwork targets gain a free minor move",
+                        "maxMultipliers": 5
+                    },
+                    "hero": {
+                        "id": 2,
+                        "name": "Hero",
+                        "image": "",
+                        "description": "Patchwork works on downed targets. Adds 1-turn cooldown",
+                        "maxMultipliers": 3
+                    },
+                    "doubledosage": {
+                        "id": 3,
+                        "name": "Double Dosage",
+                        "image": "",
+                        "description": "Patchwork is twice as effective. Adds 1-turn cooldown",
+                        "maxMultipliers": 8
+                    }
+                }
+            }
+        },
+        "shadowhunt": {
+            "id": 5,
+            "name": "shadowhunt",
+            "displayName": "Shadowhunt",
+            "image": "",
+            "description": "Once per encounter you may hide in the shadows, severely reducing your visibility to all sources. Attacks hit for 50% extra damage while hidden",
+            "mods": {
+                "boons": {
+                    "darkened": {
+                        "id": 1,
+                        "name": "Darkened",
+                        "image": "",
+                        "description": "Decrease enemy detection chanceby 5% per Skill Point",
+                        "maxMultipliers": 6
+                    },
+                    "shadowstrike": {
+                        "id": 2,
+                        "name": "Shadowstrike",
+                        "image": "",
+                        "description": "Decrease enemy detection chance by 5% per Skill Point",
+                        "maxMultipliers": 6
+                    },
+                    "apostle": {
+                        "id": 3,
+                        "name": "Apostle",
+                        "image": "",
+                        "description": "Shadowhunt hits have 5% per Skill Point chance to cause bleed (50% DOT)",
+                        "maxMultipliers": 3
+                    }
+                },
+                "upgrades": {
+                    "puredarkness": {
+                        "id": 1,
+                        "name": "Pure Darkness",
+                        "image": "",
+                        "description": "You become fully cloaked and invisible",
+                        "maxMultipliers": 3
+                    },
+                    "disciple": {
+                        "id": 2,
+                        "name": "Disciple",
+                        "image": "",
+                        "description": "Bleed damage increased to 100%",
+                        "maxMultipliers": 3
+                    },
+                    "master": {
+                        "id": 3,
+                        "name": "Master",
+                        "image": "",
+                        "description": "Doubles all Shadowhunt effectiveness",
+                        "maxMultipliers": 9
+                    }
+                }
+            }
+        },
+        "guardianangel": {
+            "id": 6,
+            "name": "guardianangel",
+            "displayName": "Guardian Angel",
+            "image": "",
+            "description": "Project an energy shield around a nearby ally, blocking 1x D20 of damage from all sources. Renders those shielded pacified.",
+            "mods": {
+                "boons": {
+                    "barrier": {
+                        "id": 1,
+                        "name": "Barrier",
+                        "image": "",
+                        "description": "Energy shields block an additional 5% damage per Skill Point",
+                        "maxMultipliers": 4
+                    },
+                    "hardened": {
+                        "id": 2,
+                        "name": "Hardened",
+                        "image": "",
+                        "description": "Energy shields block 10% more physical damage per Skill Point",
+                        "maxMultipliers": 4
+                    },
+                    "colorless": {
+                        "id": 3,
+                        "name": "Colorless",
+                        "image": "",
+                        "description": "Energy shields block 5% more elemental damage per point",
+                        "maxMultipliers": 4
+                    }
+                },
+                "upgrades": {
+                    "technician": {
+                        "id": 1,
+                        "name": "Technician",
+                        "image": "",
+                        "description": "Projecting a shield requires only a minor action",
+                        "maxMultipliers": 5
+                    },
+                    "skilledprojection": {
+                        "id": 2,
+                        "name": "Skilled Projection",
+                        "image": "",
+                        "description": "Project a shield around any target (including yourself)",
+                        "maxMultipliers": 5
+                    },
+                    "focusedshield": {
+                        "id": 3,
+                        "name": "Focused Shield",
+                        "image": "",
+                        "description": "You or your allies may attack through the shield.",
+                        "maxMultipliers": 8
+                    }
+                }
+            }
+        }
+    }
+}
