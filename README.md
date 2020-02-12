@@ -1,6 +1,9 @@
 # StarPGCM
 StarPG Character Manager prototype for StarPG Roleplaying game created by Lachlan Spears
 
+## License
+Please acknowledge the license of this software outlined in the "LICENSE.md" file located in the root of this repository.
+
 ## Requirements
 To use this application, you will require a web server. You can then access the application by running the HTML file on that server.
 
